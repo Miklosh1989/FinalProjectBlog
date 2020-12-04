@@ -1,15 +1,14 @@
 {% extends 'mainBlog/base_blog.html' %}
 
 {% block title%}
-    Posts list
+Posts list
 {% endblock %}
 
 {% block content %}
-    <h1 class = "mb-5">Posts:</h1>
-    {% for i in names %}
-<p>
-    {{ i }}
-</p>
+<h1 class = "mb-4">Posts:</h1>
+{% for post in posts%}
+{% include 'mainBlog/includes/post_card_template.html'  %}
+
 {% endfor %}
 
 {% endblock %}
