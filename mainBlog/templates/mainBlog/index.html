@@ -4,7 +4,9 @@
 Posts list
 {% endblock %}
 
+<div class="postlist">
 {% block content %}
+
 <h1 class = "mb-4">Posts:</h1>
 {% for post in page_object.object_list %}
 {% include 'mainBlog/includes/post_card_template.html'  %}
@@ -12,3 +14,4 @@ Posts list
 {% endfor %}
 
 {% endblock %}
+</div>
