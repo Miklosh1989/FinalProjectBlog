@@ -63,7 +63,7 @@ class PostUpdate(LoginRequiredMixin, ObjectUpdateMixin, View):
 class PostDelete(LoginRequiredMixin, ObjectDeleteMixin, View):
     model = Post
     template = 'mainBlog/post_delete_form.html'
-    redirect_url = 'mainBlog/posts_list_url'
+    redirect_url = 'posts_list_url'
     raise_exception = True
 
 def tags_list(request):
