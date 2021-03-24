@@ -35,7 +35,6 @@
         <ul class="links">
             <li class="active"><a href="{% url 'posts_list_url' %}">Posts</a></li>
             <li><a href="{% url 'tags_list_url' %}">Tags</a></li>
-
         </ul>
         <form class="form-inline my-2 my-lg-0" action="{% url 'posts_list_url' %}">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="search">
@@ -44,6 +43,8 @@
     </nav>
 
     <div id="main">
+
+
                 <div class="container" mt-5>
                     <div class="row">
                         <div class="col-6" offset-md-2>
@@ -109,5 +110,6 @@
     <script src="{% static 'js/breakpoints.min.js' %}"></script>
     <script src="{% static 'js/util.js' %}"></script>
     <script src="{% static 'js/main.js' %}"></script>
+</div>
 </body>
 </html>
